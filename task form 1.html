@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#ffbffb;
+            font-family: Arial,sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 800px;
+            height: 600px;
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px;
+        }
+        .container .right{
+            flex: 1;
+            background-color:black;
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2{
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .form{
+            margin-bottom: 15px;
+        }
+        .form input,
+        .form select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+        }
+        .form input::placeholder{
+            color: #bbb;
+        }
+        .img{
+            height: 600px;
+            width: 400px;
+            display: flex;
+        }
+        .button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 35px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 110px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="pink-smoke-background-vgubduiofp5m5n97.jpg" alt="pink">
+        </div>
+        <div class="right">
+            <h2>Registration</h2>
+            <form action="">
+                <div class="form">
+                    <input type="text" id="first name" placeholder="First Name">
+                </div>
+                <div class="form">
+                    <input type="text" id="Address" placeholder="Address">
+                </div>
+                <div class="form">
+                    <input type="text" id="Zip Code" placeholder="Zip Code">
+                </div>
+                <div class="form">
+                    
+                    <select id="state">
+                        <option value="State">State</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="Tamil Nadu"> Tamil Nadu</option>
+                        
+                    </select>
+                </div>
+                <div class="form">
+                    <input type="text" id="Username" placeholder="Username">
+                </div>
+                <div class="form">
+                    <input type="text" id="Email" placeholder="Email">
+                </div>
+                <div>
+                    <button class="button">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
