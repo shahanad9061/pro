@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family:Arial, sans-serif ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 800px;
+            height: 600px;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px ;
+        }
+        .container-left{
+            flex: 1;
+            background-color:white;
+            color: blue;
+            padding: 40px;
+            display: flex;
+            flex-direction:column;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+
+        }
+        h2{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .inner{
+            margin-bottom: 15px;
+        }
+        .inner input,
+        .inner select{
+           width: 100%;
+           padding: 10px; 
+           margin-top: 5px;
+           border: none;
+           border-bottom: 1px solid gray;
+           
+        }
+        .container-right{
+            flex: 1;
+            background-color: darkblue;
+            color: white;
+            padding: 45px;
+            flex-direction: column;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .inner2 input,
+        .inner2 select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-color: darkblue;
+            background-color: transparent;
+            color: white;
+            border-bottom: 1px solid gray;
+        }
+        .inner2 input::placeholder{
+            color: white;
+        }
+        .inner6{
+            padding: 15px;
+            background-color: transparent;
+            margin-top: 25px;
+        }
+        .butten{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 35px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin-right: 50%;
+            box-shadow: rgba(0,0,0,0.24)0px 3px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-left">
+            <h2>General Information</h2>
+            <form action="">
+                <div class="inner" style="width: 100%;">
+                    <select name="title" id="Title" style="width: 100%;">
+                        <option value="Title">Title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Mrs">Mrs</option>
+                    </select>
+                </div>
+                <div class="inner" style="width: 100%;">
+                    <input type="text" id="First name" placeholder="First Name" style="width: 43%;">
+                    <input type="text" id="Last Name" placeholder="Last Name" style="width: 43%;">
+                </div>
+                <div class="inner" style="width: 100%;">
+                    <select name="Position" id="Position" style="width: 100%;">
+                        <option value="Position" selected disabled>Position</option>
+                        <option value="Jr Developer">Jr Developer</option>
+                        <option value="Python Developer">Python Developer</option>
+                        <option value="Marketing Head">Marketing Head</option>
+                    </select>
+                    
+                </div>
+                <div class="inner" style="width: 100%;">
+                    <input type="text" id="company" placeholder="Company" style="width: 95%;">
+                </div>
+                <div class="inner">
+                    <input type="text" id="Business Arena" placeholder="Business Arena" style="width: 54.8%;">
+                   <select name="Employees" id="Employees" style="width: 37.5%;">
+                    <option value="Employees" selected disabled>Employees</option>
+                     <option value="1">01</option>
+                     <option value="2">02</option>
+                     <option value="3">03</option>
+                   </select>
+                </div>
+                
+            </form>
+        </div>
+      
+        <div class="container-right">
+            <h2>Contact Details</h2>
+            <form action="">
+                <div class="inner2" style="width: 100%;">
+                    <input type="text" id="street+Nr" placeholder="Street+Nr" style="width: 90%;">
+                </div>
+                <div class="inner2">
+                 <input type="text" id="Additional Information" placeholder="Additional Information">
+                </div>
+                <div class="inner2">
+                   <input type="text" id="Zip Code" placeholder="Zip Code" style="width: 30%;">
+                   <select name="Place" id="Place" style="width: 60%; background-color:darkblue;">
+                   <option value="Place" style="background-color: darkblue;">Place</option>
+                   <option value="Kozhikode" style="background-color: darkblue;">Kozhikode</option>
+                   <option value="kannur" style="background-color: darkblue;">kannur</option>
+                   </select>
+                </div>
+                <div class="inner2">
+                    <select name="Country" id="Country" style="width: 98%; background-color: darkblue;">
+                        <option value="Country">Country</option>
+                        <option value="india">India</option>
+                        <option value="Usa">USA</option>
+                    </select>
+                </div>
+                <div class="inner2">
+                    <select name="code"id="code +" style="background-color: darkblue; width: 50%;" >
+                        <option value="Code +">Code +</option>
+                        <option value="+91">+91</option>
+                        <input type="text" id="Phone Number" placeholder="Phone Number" style="width: 43%;">
+                    </select>
+                    
+                </div>
+                <div class="inner2">
+                    <input type="text" id="Your Email" placeholder="Your Email" style="width: 92%;">
+                </div>
+                <div class="inner6">
+                    <input type="checkbox" id="check">
+                    <label for="readme" style="font-size: 11px;">I do accept the Term and Conditions of your site.</label>
+                </div>
+                <div class="butten">
+                    <button style="border: none; background-color: white;">Register Badge</button>
+                </div>
+            </form>
+        </div>
+        
+
+    </div>
+</body>
+</html>
