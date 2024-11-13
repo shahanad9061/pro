@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .body,html{
+            overflow-x: hidden;
+        }
+        .logo{
+            padding-top: 30px;
+            padding-left: 40px;
+        }
+        .headbar{
+            display: flex;
+        }
+        .headend{
+            display: flex;
+            padding-left: 250px;
+            padding-top: 50px;
+        }
+        .headchild2{
+            padding-left: 80%;
+        }
+        .buttons{
+            padding-left: 30%;
+            padding-top: 30px;
+        }
+        .button,
+        .buttonhome{
+            height: 50px;
+            width: 100px;
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(71,69,69);
+        }
+        .buttonhome{
+            background-color: orangered;
+            border-radius: 25px;
+            color: white;
+            border: none;
+        }
+        .imgwithhead{
+            display: flex;
+        }
+        .bannerimg{
+
+        }
+        .img{
+            width: 90%;
+            padding-left: 50px;
+        }
+        .iconwithheading{
+            width: 45%;
+        }
+        .icon{
+            padding-top: 130px;
+            padding-left: 110px;
+            padding-bottom: 50px;
+        }
+        .headicon{
+            font-size: 70px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(30,29,29);
+        }
+        .heading{
+            padding-left: 110px;
+        }
+        .readmore{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            position: relative;
+        }
+       
+        .read{
+            padding-left: 110px;
+            padding-top: 70px;
+            display: flex;
+            align-items: center;
+            padding-right: 250px;
+            transition: 0.3;
+        }
+        .read h4:hover + .line{
+            transform: scaleX(1);
+        }
+        .readmore:hover{
+            color: orangered;
+        }
+        .roundbutton1,
+        .roundbutton2{
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+        .round{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+        }
+        .roundbutton2{
+
+             margin-left: 25px;
+        }
+        .roundbutton1:hover,
+        .roundbutton2:hover{
+
+            background-color: orangered;
+            transition: 0.3s;
+        }
+        .skills{
+
+            align-items: center;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+        .skill1{
+
+            padding-bottom: 10px;
+        }
+        .class{
+            font-size: 50px;
+        }
+        .pera{
+            font-size: 20px;
+        }
+        .boxs{
+            width: 100%;
+            height: 450px;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            padding-left: 13%;
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+        .box1,
+        .box2,
+        .box3{
+            width: 350px;
+            height: 450px;
+            border-radius: 15px;
+        }
+        .boximg1{
+            align-items: center;
+            padding-left: 130px;
+            padding-top: 50px;
+        }
+        .boximg1head{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            padding-top: 20px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .boxpera1{
+            font-size: 22px;
+            text-align: center;
+            padding: 30px;
+            color: white;
+        }
+        .box1,
+        .box3{
+            background-color: orangered;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .read1,
+        .read2{
+            padding-left: 200px;
+            display: flex;
+            align-items: center;
+            transition: 0.3;
+            width: 270px;
+        }
+        .read3{
+            padding-left: 110px;
+            display: flex;
+            align-items: center;
+            transition: 0.3;
+            width: 270px;
+        }
+        .readmore1,
+        .readmore2,
+        .readmore3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .read1 h4:hover + .line1{
+            transform: scaleX(1);
+        }
+        .mainread{
+            display: flex;
+            padding-bottom: 110px;
+        }
+        .read2{
+            padding-left: 100px;
+
+
+        }
+        .read2 h4:hover + .line2{
+            transform: scaleX(1);
+        }
+        .read3 h4:hover + .line3{
+            transform: scaleX(1);
+        }
+        .readmore1:hover,
+        .readmore2:hover,
+        .readmore3:hover{
+            color: orangered;
+        }
+        .about{
+            background-image: url(images/about_bg.jpg) ;
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat;
+            padding-top: 90px;
+            display: flex;
+        }
+        .aboutimg{
+            padding-left: 40px;
+            padding-top: 50px;
+        }
+        .aboutimage{
+            width: 730px;
+        }
+        .aboutcontent{
+            margin-left: 100px;
+            margin-top: 110px;
+            height: 500px;
+            width: 50%;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        .content{
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+        .contentpera{
+            color: white;
+            font-size: 20px;
+            margin-top: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .readmore4{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+        .readmore4:hover{
+            color: red;
+            transition: 0.3s;
+        }
+        .videohead,
+        .videopera{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .videohead{
+            padding-top: 100px;
+        }
+        .videopera{
+            padding-top: 25px;
+        }
+        .saktvideo{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        .see{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            position: relative;
+
+        }
+        .seemore{
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            padding-right: 150px;
+            transition: 0.3;
+
+        }
+        .seeline{
+            flex-grow: 1;
+            height: 2px;
+            background-color: orangered;
+            margin-left: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        .seemore h4:hover + .seeline{
+            transform: scalex(1);
+        }
+        .see:hover{
+            color: orangered;
+        }
+        .shop_img_container{
+            padding-left: 55px;
+
+        }
+        .shop_img{
+            height: 900px;
+
+        }
+        .shop{
+            display: flex;
+            align-items: center;
+            display: flex;
+        }
+        .text_container{
+            height: 400px;
+            width: 500px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: larger;
+            margin-top: px;
+        }
+        .shope_head{
+            padding-bottom: 40px;
+        }
+        .testimonial{
+            background-color: blue;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            color: white;
+            
+        }
+        .card_background{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            justify-content: baseline;
+            gap: 50px;
+        }
+        .card_1{
+            background-color: orangered;
+            width: 250px;
+            padding: 40px 20px 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            margin-top: 17px;
+        }
+        .card_1_img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+            margin-left: 90px;
+    
+        }
+        .card_1_img img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .card_1_head{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .card_1_quote{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .card_2_background{
+            background-color: white;
+            width: 500px;
+            height: 300px;
+            padding: 40px 20px 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .last_round_btn{
+            height: 70px;
+            width: 70px;
+            background-color: orangered;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 30px;
+        }
+        .last_btn{
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-color: blue;
+        }
+        .last_round_btn:hover{
+            opacity: 80%;
+            transition: 1s;
+
+        }
+        .con_img{
+            width: 20px;
+            padding-top: 10px;
+            padding-right: 10px;
+            color:blue;
+            
+
+        }
+        .con_text{
+            font-size: 20px;
+            padding-left: 10px;
+            font-weight: normal;
+        }
+        .con_head{
+            padding-bottom: 20px;
+
+        }
+        .contact_us{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 200px;
+            border-right: 2px solid red;
+            width: 400px;
+
+        }
+        .bottom{
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+        .let{
+            padding-left: 60px;
+        }
+        .let_head{
+            padding-bottom: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .form{
+            height: 40px;
+            width: 200px;
+            padding-left: 5px;
+            border: 0.5px soild rgb(245,241,241);
+            margin-right: 10px;
+            border: none;
+        }
+        .form_button{
+            height: 40px;
+            width: 200px;
+            margin-left: 25px;
+            border: none;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 10px;
+        }
+        .form_button:hover{
+            background-color: blue;
+            transition: 3s;
+        }
+        .link{
+            padding-top: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .btn{
+            height: 30px;
+            width: 80px;
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            text-align: left;
+        }
+        .btn:hover{
+            color: red;
+            transition: 3s;
+        }
+        .bottom_borde{
+            background-color: orangered;
+            text-align: center;
+            font-size: 7px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
+        }
+
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="headbar">
+            <div class="logo">
+                <img src="../website/images/logo.png" alt="">
+
+            </div>
+            <div class="buttons">
+                <button type="button" class="buttonhome">HOME</button>
+                <button type="button" class="button">ABOUT</button>
+                <button type="button" class="button">SKATING</button>
+                <button type="button" class="button">SHOP</button>
+                <button type="button" class="button">COUTACT US</button>
+
+            </div>
+            <div class="headend">
+                <div class="headchildl">
+                    <img src="../website/images/profile.jpg.png.url" alt="">
+
+                </div>
+                <div class="headchild2">
+                    <img src="" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="imgwithhead">
+            <div class="iconwithheading">
+                <div class="icon">
+                    <img src="../website/images/top_icon.png" alt="">
+
+                </div>
+                <div class="heading">
+                    <h1 class="headicon">Skating</h1>
+                    <h1 class="headicon">Board</h1>
+                    <h1 class="headicon">School</h1>
+
+                </div>
+                <div class="read">
+                    <h4 class="readmore">READ MORE</h4>
+                   
+
+                </div>
+
+            </div>
+            <div class="bannerimg">
+                <img src="../website/images/banner_img.png" alt="">
+
+            </div>
+
+        </div>
+        <div class="round">
+            <button type="button" class="roundbutton1">&larr;</button>
+            <button type="button" class="roundbutton2">&rarr;</button>
+
+        </div>
+        <div class="skills">
+            <div class="skill1">
+                <h1 class="class">Our Skating class</h1>
+
+            </div>
+            <div class="skill2">
+                <p class="pera">There are many variations of passages of Lorem</p>
+
+            </div>
+
+        </div>
+        <div class="boxs">
+            <div class="box1">
+                <img src="../website/images/class1.png" alt="" class="boximg1">
+                <h5 class="boximg1head">Skateboard</h5>
+                <p class="boxperal">There are many variationsof passages of Lorem Ipus available,but the majority have suffered alteration there are many varitior</p>
+
+
+            </div>
+            <div class="box2">
+                <img src="../website/images/class2.png" alt="" class="boximg1">
+                <h5 class="boximg1head">Skateboard</h5>
+                <p class="boxperal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations</p>
+
+
+            </div>
+            <div class="box3">
+                <img src="../website/images/class3.png" alt="" class="boximg1">
+                <h5 class="boximg1head">Skatebord</h5>
+                <p class="boxperal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations</p>
+
+
+            </div>
+
+        </div>
+        <div>
+            <div class="mainread">
+                <div class="read1">
+                    <h4 class="readmore1">READ MORE</h4>
+                   
+
+                </div>
+                <div class="read2">
+                    <h4 class="readmore2">READ MORE</h4>
+                    
+
+                </div>
+                <div class="read3">
+                    <h4 class="readmore3">READ MORE</h4>
+                   
+                </div>
+
+            </div>
+            <div>
+                <div class="about">
+                   <div class="aboutcontent">
+                    <h3 class="content">About</h3>
+                    <h3 class="content">Skating</h3>
+                    <h3 class="content">School</h3>
+                    <p class="contentpere">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns</p>
+                    <div class="read3" style="padding-left: 0; padding-top: 30px;">
+                        <h4 class="readmore4">READ MORE</h4>
+                    </div>
+
+                   </div>
+                   <div class="aboutimg">
+                     <img src="images/about.png" alt="" class="aboutimage">
+
+                   </div>
+                </div>
+            </div>
+            <div class="video">
+                <div class="videohead">
+                    <h1>Skating Video</h1>
+
+                </div>
+                <div class="videopera">
+                    <p>There are many variation of passages of Lorem Ipsum available,but the majority have suffered</p>
+
+                </div>
+
+            </div>
+            <div class="saktvideo">
+                <div>
+                    <img src="images/sakt1.png" alt="">
+                    <div class="seemore">
+                        <h4 class="see">SEE MORE</h4>
+                        <div class="seeline"></div>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="images/sakt2.png" alt="">
+                    <div class="seemore">
+                        <h4 class="see">SEE MORE</h4>
+                        <div class="seeline"></div>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="images/sakt3.png" alt="">
+                    <div class="seemore">
+                        <h4 class="see">SEE MORE</h4>
+                        <div class="seeline"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="shope" style="display: flex;">
+                <div class="shop_img_container">
+                    <img src="images/shop.png" alt="" class="shop_img">
+
+                </div>
+                <div class="text_container">
+                    <h1>our Skate</h1>
+                    <h1 class="shope_head">Shope</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns</p>
+                    <div class="seemore">
+                        <h4 class="see">BUY NOW</h4>
+                        <div class="seeline">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="testimonial">
+                <h1>Testimonial</h1>
+
+            </div>
+            <div class="card_background" style="display: flex;">
+                <div class="card_1_background">
+                    <div class="card_1">
+                        <div class="card_1_img">
+                            <img src="images/test1.png" alt="">
+
+                        </div>
+                        <h2 class="card_1_head">Jone Lo</h2>
+                        <img src="images/te.png" alt="">
+                        <p class="card_1_quate">humour, or randomised words which don't look even slightly believable. If you are</p>
+
+
+                    </div>
+
+                </div>
+                <div class="card_2_background">
+                    <div class="card_2">
+                        <img src="images/test2.png" alt="" class="" contenteditable="card_1_img">
+
+                    </div>
+                    <h2 class="card_1_head">Disol</h2>
+                    <img src="images/te2.png" alt="">
+                    <p class="card_1_quote">humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
+
+                </div>
+                <div class="card_1_background">
+                    <div class="card_1">
+                        <div class="card_1_img">
+                            <img src="images/test3.png" alt="">
+
+                        </div>
+                        <h2 class="card_1_head">Michale</h2>
+                        <img src="images/te.png" alt="">
+                        <p class="card_1_quote">humour, or randomised words which don't look even slightly believable. If you are</p>
+
+                    </div>
+
+                </div>
+             
+                
+            </div>
+            <div class="last_btn">
+                <button type="button" class="last_round_btn"><</button>
+                <button type="button" class="last_round_btn">></button>
+
+            </div>
+            <div class="bottom">
+                <div class="contact_us">
+                    <h1 class="con_head">Contact Us</h1>
+                    <h4 class="con_text"><img src="images/location.png" alt="" class="con_img">Locations</h4>
+                    <h4 class="con_text"><img src="images/phone.png" alt="" class="con_img">Call +01 1234567890</h4>
+                    <h4 class="con_text"><img src="images/message.png" alt="" class="con_img">demo@gmail.com</h4>
+
+                </div>
+                <div class="let">
+                    <h1 class="let_head">Newsletter</h1>
+                    <form action="">
+                        <input type="email" id="email" placeholder="Enter your email id" class="form">
+                        <input type="email" id="email" placeholder="Enter your email id" class="form">
+                        <button type="button" class="form_button">SUBSCRISE</button>
+                    </form>
+                    <div class="link">
+                        <h1>Useful Link</h1>
+
+                    </div>
+                    <div class="link_btn">
+                        <button type="button" class="btn">Home</button>
+                        <button type="button" class="btn">About</button>
+                        <button type="button" class="btn">Skating</button>
+                        <button type="button" class="btn">Shop</button>
+                        <button type="button" class="btn">Contact Us</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div  class="bottom_borde">
+                <h1>
+                    © 2020 All Rights Reserved. Design by Free html Templates
+                </h1>
+
+
+            </div>
+
+        </div>
+       
+    </div>
+    
+    
+</body>
+</html>
