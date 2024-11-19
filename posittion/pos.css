@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(1 1 83);
+}
+.main{
+    padding-top: 170px;
+    padding-left: 100px;
+    display: flex;
+}
+.main1{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+}
+.sub{
+    background-color: #1E204C;
+    height: 400px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+.sub1{
+    background-color: #5647EA;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    
+    
+  
+
+}
+.main2-sb{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+    
+}
+.sub-a{
+    background-color:#de8315;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    
+
+
+}
+.sub-b{
+    background-color: #1E204C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+   top: 50px;
+   
+}
+.main2-sb1{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 30px;
+}
+.sub-c{
+    background-color:  #25d1eb;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+.sub-d{
+    background-color: #1E204C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    
+}
+.main2-sb2{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+    
+    
+}
+.sub-e{
+    background-color: #e3236d;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+.sub-f{
+    background-color: #1E204C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    
+}
+.main2_sub1a{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+}
+.sub-aa{
+    background-color:green ;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.sub-ab{
+    background-color: #1E204C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+}
+.main2-sub1b{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+}
+.sub-ac{
+    background-color:violet ;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.sub-ad{
+    background-color: #1E204C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+}
+.main2-sub1c{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+}
+.sub-ae{
+    background-color:yellow ;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;   
+}
+.sub-af{
+    background-color: #1E204C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+}
