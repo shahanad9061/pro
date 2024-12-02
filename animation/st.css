@@ -373,21 +373,5 @@ main{
 .test-1{
     width: 30%;
     
-}
-footer{
-    width: 86.5%;
-    height: 400px;
-    background-color: #0F172B;
-    display: flex;
-    
-}
-.foot{
-    width: 25%;
-    height: 280px;
-    padding: 40px;
-}
-.foot-head{
-    font-family: "Pacifico", cursive;
-    color: #FEA116;
-    font-size: 18px;
-}
+} 
+
