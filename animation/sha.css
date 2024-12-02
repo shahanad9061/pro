@@ -59,7 +59,66 @@
         opacity: 0;
         position: relative;
     }
-
-
+    .about_us{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .img_container{
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .img-1{
+        width: 140px;
+    }
+    .img-2{
+        width: 45px;
+    }
+    .img-3{
+        width: 45px;
+    }
+    .img-4{
+        width: 140px;
+    }
+    .two_img_container{
+        padding-left: 0;
+        margin-left: 5px;
+    }
+    .two_img_container-2{
+        padding-left: 0;
+        margin-left: 5px;
+    }
+    .about_content{
+        width: 100%;
+        height: auto;
+        padding-left: 10px;
+    }
+    .about-1{
+        padding-top: 20px;
+    }
+    .box{
+        display: block;
+    }
+    .box-1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-btn{
+        margin-top: 50px;
+    }
+    .dinner{
+        display: block;
+        text-align: center;
+    }
+    .food_menu{
+        width: 100%;
+        display: block;
+    }
+    .video_form{
+        width: 100%;
+        display: block;
+    }
 }
-    
+
+
