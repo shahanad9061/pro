@@ -36,6 +36,9 @@ ul{
     
 
 }
+li{
+    flex-wrap: wrap;
+}
 ul li a{
     text-decoration: none;
     color: white;
@@ -91,7 +94,7 @@ a{
     }
     
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:655px) {
     ul{
         flex-direction: column;
         align-items: center;
@@ -100,6 +103,11 @@ a{
         position: static;
     }
     
+}
+@media screen and (max-width:600px) {
+    ul{
+        flex-direction: column;
+    }
 }
 .bg-image{
     background-image: linear-gradient(rgba(15,23,43,0.9),rgba(15,23,43,0.9)), url(img/bg-hero.jpg);
@@ -240,39 +248,35 @@ a{
 .two_img_container{
     display: flex;
     gap: 20px;
-    margin-left: 50px;
-    padding-top: 100px;
-
+    margin-left: 50px;  
 }
 .img_container{
     width: 50%;
     height: auto;
-
 }
 .img-1{
-    width: 250px;
+    width: 280px;
     animation-delay: 0s;
-
 }
 .img-2{
-    width: 150px;
+    width: 180px;
     padding-top: 100px;
-    animation: delay 0.3s;
+    animation-delay: 0.3s;
 }
+
 .two_img_container-2{
     display: flex;
     gap: 20px;
-    padding-top: 20px;
     margin-left: 50px;
+    margin-top: 20px;
 }
 .img-3{
-    width: 150px;
+    width: 180px;
     padding-left: 100px;
     animation-delay: 0.3s;
-
 }
 .img-4{
-    width: 250px;
+    width: 280px;
     animation-delay: 0s;
 }
 .img-1,
@@ -283,26 +287,42 @@ a{
     transform: scale(0.5);
     animation: increaseSize 1.5s ease-out forwards;
 }
-
 .about_content{
     width: 50%;
     height: 700px;
 }
+/* .about-div{
+    display: flex;
+    margin: 20px 0;
+    padding-right: 210px;
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+.about-div::after{
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid #FEA116;
+    margin: 0 10px;
+    
+} */
 .res_img{
     width: 35px;
+
 }
 .about-1{
-    font-family: "Pacifico", cursive;
+    font-family: "pacifico",cursive;
     font-size: 23px;
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 20px;
     color: #FEA116;
+
 }
 .about-2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 37px;
     padding-bottom: 20px;
- }
+
+}
 .about-3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -311,24 +331,25 @@ a{
     color: gray;
 }
 .about-4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-right: 30px;
     color: gray;
     padding-bottom: 20px;
+
 }
 .box{
     width: 100%;
-    
     height: 100px;
     display: flex;
+
 }
 .box-1{
     display: flex;
     width: 50%;
     height: 50px;
     border-left: 5px solid #FEA116;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 .about-btn{
     height: 50px;
@@ -339,72 +360,60 @@ a{
     font-weight: bold;
     color: white;
 }
-@media screen and (max-width:900px) and (min-width:600px) {
+.btn-div{
+    padding-top: 40px;
+}
+@media screen and (max-width: 1410px) {
     .about_us{
-        width: 100%;
         flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+@media screen and (max-width:990px) {
+    .about_us{
+        max-width: 100%;
+        align-items: center;
     }
     .img_container{
-        width: 100%;
-        justify-content: center;
-        overflow-x: hidden;
-    }
-    .two_img_container{
-        justify-content: center;
-        margin-left: 0;
-    }
-    .two_img_container-2{
-        justify-content: center;
-        margin-left: 100px;
+        max-width: 100%;
+        align-items: center;
     }
     .about_content{
-        width: 70%;
-        padding-left: 150px;
+        max-width: 100%;
+        align-items: center;
     }
     
 }
-@media screen and (max-width: 1400px) and (min-width: 900px) {
-    .about_us{
-        flex-direction: column;
-        width: 100%;
-        overflow-x: hidden;
-    }
+@media screen and (max-width:800px) {
     .img_container{
-        width: 100%;
-        justify-content: center;
-        overflow-x: hidden;
-
+        max-width: 100%;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .about_content{
-        width: 70%;
-        padding-left: 120px;
-    }
+    
 }
-@media screen and (max-width: 600px){
-    .about_us{
-        flex-direction: column;
-        width: 100%;
-    }
-    .img_container{
-        width: 100%;
-        justify-content: center;
-        overflow-x: hidden;
-
-    }
-    .about_content{
-        width: 70%;
-        padding-left: 120px;
-    }
+.food-main{
+    text-align: center;
+}
+.food{
+    font-family: "pacifico",cursive;
+    color: #FEA116;
+    font-size: 23px;
+    padding-bottom: 10px;
 }
 .dinner{
     display: flex;
-    gap: 30px;
     justify-content: center;
-    padding-top: 30px;
+    gap: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
     width: 90%;
-  }
-  .food_menu{
+}
+.food_menu{
     display: flex;
     padding-bottom: 50px;
 }
@@ -414,7 +423,7 @@ a{
 .food_menu-2{
     width: 50%;
 }
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width:980px) {
     .food_menu{
         flex-direction: column;
         align-items: center;
@@ -425,29 +434,33 @@ a{
     .food_menu-2{
         width: 67%;
     }
+    
+    
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width:600px) {
     .food_menu{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 0;
+
     }
     .food_menu-1,
     .food_menu-2{
         width: 67%;
     }
-
+    
 }
 .video_form{
     display: flex;
     width: 90%;
+    
 }
 .form{
     background-color: #0F172B;
     width: 50%;
     padding-left: 25px;
     padding-top: 50px;
+    
 }
 .form-1{
     font-family: "Pacifico", cursive;
@@ -465,25 +478,31 @@ a{
     height: 30px;
     padding: 10px;
     border-radius: 5px;
+    
 }
 .in-4{
-    width: 46.5%;
+    width: 45.5%;
     height: 50px;
     border-radius: 5px;
     padding: 10px;
 }
 .in-5{
-    width: 89.5%;
+    width: 88%;
     height: 100px;
     border-radius: 5px;
     padding: 10px;
 }
 .in-6{
-    width: 94.5%;
+    width: 92%;
     height: 50px;
     border-radius: 5px;
     padding: 10px;
+    background-color: #FEA116;
+    color: white;
+    
 }
+/*     
+
 @media screen and (max-width: 1400px) and (min-width: 900px) {
     .video_form{
         flex-direction: column;
@@ -491,7 +510,7 @@ a{
         align-items: center;
     }
     .form{
-        width: 90%;
+        width: 62%;
         align-items: center;
     }
-}
+} */
