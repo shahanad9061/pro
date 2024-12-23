@@ -184,6 +184,10 @@ a{
 }
 .card_img{
     width: 40px;
+
+}
+.card_img:hover{
+   background-color: white;
 }
 .cards{
     width: 40%;
@@ -196,6 +200,10 @@ a{
     transform: translateY(100%);
     opacity: 0;
     animation: moveUp 1.5s ease-out forwards; 
+}
+.cards:hover{
+    background-color: #FEA116;
+    color: white;
 }
 .card-sub,
 .card-sub-1{
@@ -220,6 +228,7 @@ a{
     
     
 }
+
 @media screen and (max-width:900px) {
     .main-card{
         width: 100%;
