@@ -13,38 +13,416 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="main_head">
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <div class="container">
-            <div class="social-icons d-flex gap-5 ">
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav mx-auto ">
-                    <li class="nav-item"><a href="#" class="nav-link text-light">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-light">Packages</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-light">Tours</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-light">About Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-light">Contact</a></li>
+    <div class="main_head">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+              
+              <div class="social-icons d-flex gap-5">
+                <a href="#"><i class="bi bi-instagram text-light"></i></a>
+                <a href="#"><i class="bi bi-twitter text-light"></i></a>
+                <a href="#"><i class="bi bi-facebook text-light"></i></a>
+              </div>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Packages</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
-                <div class="contact-info d-none d-lg-flex text-light">
-                    <span class="me-3"><i class="bi bi-telephone"></i>+1 334 445 023</span>
-                    <span><i class="bi bi-envelope"></i> contact@startravel.com</span>
+                
+                <div class="contact-info d-none d-lg-flex">
+                  <span class="me-3"><i class="bi bi-telephone"></i> +1 334 445 023</span>
+                  <span><i class="bi bi-envelope"></i> contact@startravel.com</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <main>
+            <div class="main-2">
+                <h1>Your Dream Vacation Awaits</h1>
+                <h4>Explore the World with us.</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div>
+                    <a href="" style="padding: 10px; background-color: #0099A3; color: white; opacity: 70%;">FLIGHTS</a>
+                </div>
+                <div>
+                    <a href="" style="padding: 10px; background-color: #0099A3; color: white; text-decoration: none; opacity: 70%;">HOTELS</a>
+                </div>
+                <div>
+                    <a href="" style="padding: 10px; background-color: #0099A3; color: white; text-decoration: none; opacity: 70%;">TOURS</a>
+                </div>
+            </div>
+            <div style="width: 100%; padding-top: 25px; padding-bottom: 150px; " class="d-flex justify-content-center">
+              <form action="" class="d-flex justify-content-center" style="background-color: white;">
+                <div>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <select name="From" id="" style="border: none;">
+                    <option value="" disabled selected>From</option>
+                    <option value="">Kozhikode</option>
+                  </select>
+                </div>
+                <div>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <select name="" id="" style="border: none;">
+                    <option value="" disabled selected>To</option>
+                    <option value="">USA</option>
+                  </select>
+                </div>
+                <div>
+                  <input type="text" class="date-input" placeholder="Departure Date" onfocus="(this.type='date')" onblur="(this.type='text')" style="border: none;">
+                </div>
+                <div>
+                  <input type="text" class="date-input" placeholder="Return Date" onfocus="(this.type='date')" onblur="(this.type='text')" style="border: none;">
+                </div>
+                <div>
+                  <select name="" id="" style="border: none;">
+                    <option value="" disabled selected>Traveller(s), Class</option>
+                    <option value="">USA</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </main>
+          
+    </div>
+    <h2 class="my-4" style="text-align: center;">Popular Destinations</h2>
+    <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="destination-card">
+                            <img src="images/Rectangle 55.png" class="img-fluid" alt="Venice">
+                            <h5 class="mt-2">Venice</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <strong>$199 per night</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="destination-card">
+                            <img src="images/Rectangle 58.png" class="img-fluid" alt="San Paolo">
+                            <h5 class="mt-2">San Paolo</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <strong>$249 per night</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="destination-card">
+                            <img src="images/Rectangle 61.png " class="img-fluid" alt="Barbados">
+                            <h5 class="mt-2">Barbados</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <strong>$299 per night</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="destination-card">
+                            <img src="images/Rectangle 63.png" class="img-fluid" alt="Cyprus">
+                            <h5 class="mt-2">Cyprus</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <strong>$239 per night</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                      <div class="col-md-3">
+                          <div class="destination-card">
+                              <img src="images/Rectangle 55.png" class="img-fluid" alt="Venice">
+                              <h5 class="mt-2">Venice</h5>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                              <strong>$199 per night</strong>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="destination-card">
+                              <img src="images/Rectangle 58.png" class="img-fluid" alt="San Paolo">
+                              <h5 class="mt-2">San Paolo</h5>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                              <strong>$249 per night</strong>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="destination-card">
+                              <img src="images/Rectangle 61.png " class="img-fluid" alt="Barbados">
+                              <h5 class="mt-2">Barbados</h5>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                              <strong>$299 per night</strong>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="destination-card">
+                              <img src="images/Rectangle 63.png" class="img-fluid" alt="Cyprus">
+                              <h5 class="mt-2">Cyprus</h5>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                              <strong>$239 per night</strong>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
+                            <div class="destination-card">
+                                <img src="images/Rectangle 55.png" class="img-fluid" alt="Venice">
+                                <h5 class="mt-2">Venice</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <strong>$199 per night</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="destination-card">
+                                <img src="images/Rectangle 58.png" class="img-fluid" alt="San Paolo">
+                                <h5 class="mt-2">San Paolo</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <strong>$249 per night</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="destination-card">
+                                <img src="images/Rectangle 61.png " class="img-fluid" alt="Barbados">
+                                <h5 class="mt-2">Barbados</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <strong>$299 per night</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="destination-card">
+                                <img src="images/Rectangle 63.png" class="img-fluid" alt="Cyprus">
+                                <h5 class="mt-2">Cyprus</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <strong>$239 per night</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row justify-content-center">
+                          <div class="col-md-3">
+                              <div class="destination-card">
+                                  <img src="images/Rectangle 55.png" class="img-fluid" alt="Venice">
+                                  <h5 class="mt-2">Venice</h5>
+                                  <p>Lorem ipsum dolor sit amet.</p>
+                                  <strong>$199 per night</strong>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="destination-card">
+                                  <img src="images/Rectangle 58.png" class="img-fluid" alt="San Paolo">
+                                  <h5 class="mt-2">San Paolo</h5>
+                                  <p>Lorem ipsum dolor sit amet.</p>
+                                  <strong>$249 per night</strong>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="destination-card">
+                                  <img src="images/Rectangle 61.png " class="img-fluid" alt="Barbados">
+                                  <h5 class="mt-2">Barbados</h5>
+                                  <p>Lorem ipsum dolor sit amet.</p>
+                                  <strong>$299 per night</strong>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="destination-card">
+                                  <img src="images/Rectangle 63.png" class="img-fluid" alt="Cyprus">
+                                  <h5 class="mt-2">Cyprus</h5>
+                                  <p>Lorem ipsum dolor sit amet.</p>
+                                  <strong>$239 per night</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next text-black" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="bg">
+      <img src="images/Ellipse 2.svg" alt="">
+    </div>
+    <div class="why-section container">
+      <h2 class="my-4">Why Us?</h2>
+      <div class="row justify-content-center">
+          <div class="col-md-3">
+              <div class="why-card p-5">
+                  <h5>🛡</h5>
+                  <h5>GUARANTEE</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="why-card p-5">
+                  <h5>👑</h5>
+                  <h5>SERVICE</h5>
+                  <p>Nunc vulputate libero et velit interdum, ac aliquet odio.</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="why-card p-5">
+                  <h5>⚒</h5>
+                  <h5>EXPERIENCE</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="adventure-section container">
+    <h2 class="my-4">Have an Adventure Today</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="images/Rectangle 67.png" alt="Canal Cruise">
+                <div class="adventure-overlay">
+                    <h5>Canal Cruise</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
-    </nav>
-    <main>
-        <div class="main-2">
-            <h1>Your Dream Vacation Awaits</h1>
-            <h4>Explore the World with us.</h4>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="images/Rectangle 66.png" alt="Sailing">
+                <div class="adventure-overlay">
+                    <h5>Sailing</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </div>
-    </main>
-   </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="images/Rectangle 77.png" alt="Camping">
+                <div class="adventure-overlay">
+                    <h5>Camping</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="images/Rectangle 78.png" alt="Hiking">
+                <div class="adventure-overlay">
+                    <h5>Hiking</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="images/Rectangle 76.png" alt="Scuba Diving">
+                <div class="adventure-overlay">
+                    <h5>Scuba Diving</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="container py-5">
+    <div class="row align-items-center">
+        <!-- Newsletter Section -->
+        <div class="col-md-6">
+            <div class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate.</p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <button type="submit" class="btn btn-primary w-100">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Award Section -->
+        <div class="col-md-6 award-section">
+            <h3>Award Winning</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate.</p>
+
+            <div class="row g-3">
+                <div class="col-6 d-flex align-items-center">
+                    <div>
+                        <img src="images/Rectangle 88.png" alt="Attractions" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p>Attractions<br><small>Top 10 Attractions</small></p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div>
+                        <img src="images/Rectangle 91.png" alt="Hotels" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p>Hotels<br><small>Top 10 Hotels</small></p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div>
+                        <img src="images/Rectangle 94.png" alt="Resorts" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p>Resorts<br><small>Top 5 Resorts</small></p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div>
+                        <img src="images/Rectangle 95.png" alt="Landmarks" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p>Landmarks<br><small>Top 10 Landmarks</small></p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div>
+                        <img src="images/Rectangle 89.png" alt="Beaches" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p>Beaches<br><small>Top 10 Beaches</small></p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div>
+                        <img src="images/Rectangle 90.png" alt="Islands" style="width: 100px;">
+                    </div>
+                    <div>
+                        <p>Islands<br><small>Top 10 Islands</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Looking for an experience?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet.</p>
+        <a href="#" class="btn">View Packages</a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <img src="images/Star 1.png" alt="Star Travels Logo">
+        <h3>Star Travels</h3>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Packages</a>
+            <a href="#">Tours</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>&copy; 2025 | StarTravels.com | All Rights Reserved</p>
+    </div>
+</div>
 </body>
 </html>
